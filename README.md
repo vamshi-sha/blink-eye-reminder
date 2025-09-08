@@ -17,14 +17,24 @@ Do you forget to blink while working long hours on your computer?
 
 blink-eye-reminder/
 │── background.js   → Service worker, handles alarms & reminders
+
+
 │── manifest.json   → Extension manifest (v3) with permissions & metadata
+
 │── popup.html      → UI for extension popup (start/stop buttons)
+
 │── popup.js        → Logic for popup controls, sends messages to background.js
+
 │── video.html      → Popup window showing the reminder video
+
 │── video.js        → Autoplays video & closes window after a few seconds
+
 │── video.mp4       → Short reminder video (accessible via video.html)
+
 │── README.md       → Project documentation
+
 │── LICENSE         → Open-source license (MIT recommended)
+
 │── .gitignore      → Ignore unnecessary system files
 
 ---
@@ -67,10 +77,7 @@ optional ,you can change the video file ,change it with your favorite eye blink 
 https://github.com/vamshi_sha/blink-extension/blob/main/assets/wynk.mp4
 ) 
 
-👉 You can also record a short demo GIF and place it in `assets/demo.gif`:
-![Demo](assets/demo.gif)
 
----
 
 ## ⚙️ Tech Stack
 
