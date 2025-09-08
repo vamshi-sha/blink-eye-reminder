@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Blink Eye Reminder",
+  "version": "1.0",
+  "description": "Plays a video reminder every minute after Start is clicked.",
+  "permissions": ["alarms", "windows", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["video.mp4"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

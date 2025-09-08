@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blink Reminder</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin: 0;
+      background: black; /* optional */
+    }
+    #reminderVideo {
+      width: 250px;   /* ~5 cm */
+      height: 250px;  /* ~5 cm */
+      border-radius: 100%; /* makes it circular */
+      object-fit: cover;  /* crops video inside circle */
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <video id="reminderVideo" autoplay muted>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+  <script src="video.js"></script>
+</body>
+</html>
